@@ -1,6 +1,6 @@
 class Student
 
-  attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url 
+  attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url
 
   @@all = []
 
@@ -19,9 +19,8 @@ class Student
       self.send(("#{k}="), v)
   end
   self
-  
+
   def self.all
-      @@all 
+      @@all
   end
 end
-
